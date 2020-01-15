@@ -11,7 +11,7 @@ mongoose.connect(`mongodb+srv://${process.env.API_USER}:${process.env.API_KEY}@c
     useUnifiedTopology: true
 })
 
-app.use(cors({}));
+app.use(cors());
 app.use(express.json());
 app.use(routes);
 
